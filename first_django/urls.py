@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from website.views import welcome, date, about
 from meetings.views import meeting_detail
-from meetings.views import meetings, rooms
+from meetings.views import meetings, rooms, new
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', welcome),
@@ -26,4 +26,5 @@ urlpatterns = [
     path ('meetings/<int:id>', meeting_detail),
     path('', meetings, name='meetings'),
     path('rooms/', rooms),
+    path('new_meeting/', new, name='new_meeting'),
 ]

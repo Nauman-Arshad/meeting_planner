@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List of meetings</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
 </head>
 <body>
+    <img src="{% static 'website/image.jpg' %}" width="100px">
     <h1>List of meetings</h1>
     <ul>
         {% for meeting in meetings %}
